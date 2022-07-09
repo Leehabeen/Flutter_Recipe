@@ -62,6 +62,7 @@ flutter:
     - assets/images/burger.jpeg
     - assets/images/coffee.jpeg
     - assets/images/pizza.jpeg
+    - assets/images/coffe_1.jpeg
   fonts:
     - family: PatuaOne
       fonts:

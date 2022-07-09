@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:flutter_recipe/components/recipe_coffee_page.dart';
 
 class RecipeListItem extends StatelessWidget {
 
@@ -14,11 +15,17 @@ class RecipeListItem extends StatelessWidget {
       crossAxisAlignment: CrossAxisAlignment.start,
       children: [
         AspectRatio(aspectRatio: 2 / 1,
-        child:  ClipRRect(
-          borderRadius: BorderRadius.circular(20),
-          child: Image.asset("assets/images/$imageName.jpeg",
-              fit: BoxFit.cover,
-        ),
+        child:  GestureDetector(
+          onTap: (){
+            Navigator.push(context, MaterialPageRoute(builder: (context) => CoffeRecipePage()),
+            );
+          },
+          child: ClipRRect(
+            borderRadius: BorderRadius.circular(20),
+            child: Image.asset("assets/images/$imageName.jpeg",
+                fit: BoxFit.cover,
+          ),
+          ),
         ),
 
         ),
